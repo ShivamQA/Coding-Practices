@@ -1,8 +1,10 @@
 import java.util.Scanner;
-
+/**
+ A class for calculating the areas
+**/ 
 public class Area extends Exception
 {
-	public void circle()
+	public void circle() //Calculates area of circle
 	{
 		try
 		{
@@ -15,11 +17,11 @@ public class Area extends Exception
 		}
 		catch(Exception e){
 			
-			System.out.println("Exception occured : "+e);
+			System.out.println("Sorry the following exception is occured : "+e);
 		
 		}
 	}
-	public void rectangle()
+	public void rectangle() //Calculates area of rectangle
 	{
 		try
 		{
@@ -34,11 +36,11 @@ public class Area extends Exception
 		}
 		catch(Exception e){
 			
-			System.out.println("Exception occured : "+e);
+			System.out.println("Sorry the following exception is occured : "+e);
 		
 		}
 	}
-	public void square()
+	public void square() //Calculates area of square
 	{
 		try
 		{
@@ -47,15 +49,15 @@ public class Area extends Exception
 			System.out.println("Input side of the square");
 			side = ob.nextDouble();
 			area = side * side;
-			System.out.println("Area of Rectangle : "+area);
+			System.out.println("Area of Square : "+area);
 		}
 		catch(Exception e){
 			
-			System.out.println("Exception occured : "+e);
+			System.out.println("Sorry the following exception is occured : "+e);
 		
 		}
 	}
-	public void triangle()
+	public void triangle() //Calculates area of triangle
 	{
 		try
 		{
@@ -70,7 +72,7 @@ public class Area extends Exception
 		}
 		catch(Exception e){
 			
-			System.out.println("Exception occured : "+e);
+			System.out.println("Sorry the following exception is occured : "+e);
 		
 		}
 	}
@@ -85,39 +87,39 @@ public class Area extends Exception
 		System.out.println("\n\t3. Square");
 		System.out.println("\n\t4. Triangle");
 		choice = ob.nextInt();
-		int i = 0;
+		int loop = 0;
 		do
 		{
 			if(choice == 1) {
 		
 				ar.circle();
-				i = 1;
+				loop = 1;
 		
 			} 
 			else if(choice == 2) {
 			
 				ar.rectangle();
-				i = 1;
+				loop = 1;
 		
 			} 
 			else if(choice == 3) {
 			
 				ar.square();
-				i = 1;
+				loop = 1;
 		
 			}
 			else if(choice == 4) {
 			
 				ar.triangle();
-				i = 1;
+				loop = 1;
 		
 			} 
 			else {
 			
 				System.out.println("Please choose a valid choice among the menu.");
-				System.out.println("Input choice again:");
-				choice = ob.nextInt();
+				System.out.println("Input your choice again:");
+				choice = ob.nextInt(); 
 			}
-		}while(i == 0);
+		}while(loop == 0);
 	}
 }
