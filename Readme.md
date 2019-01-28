@@ -1,9 +1,2 @@
-# This is an H1
-## This is an H2
-###### This is an H6
-
-This is also an H1
-==================
-
-This is also an H2
-------------------
+## Coding Practices
+A program for calculating areas of various figures.
